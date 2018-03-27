@@ -1,0 +1,31 @@
+{
+  "name": "template-cafezinho",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wesleyBU/cafezinho-estacaohack.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "estacaohack",
+    "wesleyBU"
+  ],
+  "author": "wesleyBU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wesleyBU/cafezinho-estacaohack/issues"
+  },
+  "homepage": "https://github.com/wesleyBU/cafezinho-estacaohack#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3"
+  }
+}

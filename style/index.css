@@ -1,0 +1,485 @@
+/* Configurações globais */
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition-duration: 1s
+}
+@font-face {
+    font-family: 'pt serif';
+    src: url(../style/font/PT_Serif-Web-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'pricedown bl';
+    src: url('../style/font/pricedown_bl.ttf');
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: #ffffff;
+}
+.combo{
+    position: fixed;
+    top: 80%;
+    height: 20%;
+    left: 100%;
+    
+}
+.alertMsg{
+    display: flex;
+    height: auto;
+    background-color: #4e321c;
+    position: fixed;
+    z-index: 99;
+    width: 20%;
+    min-height: 19%;
+    top: 10%;
+    box-shadow: 5px 4px 22px;
+    left: -30% ;
+    transition-duration: 1s;
+}
+.alertMsg > .contentAlertMsg{
+    width: 92%;
+    height: 100%;
+    margin: 0;
+    padding: 0% 2%;
+}
+
+.contentAlertMsg > h6{
+    margin: 0;
+    height: 17%;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    text-align: center;
+    font-size: 120%;
+    color: #ffffff;
+}
+.contentAlertMsg > p{
+    margin: 0;
+    height: 77%;
+    padding-top: 5px;
+    color: #dcdcec;
+    font-family: pt serif;
+}
+
+.alertMsg > button{
+    width: 24px;
+    border: none;
+    background-color: #afafae57;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 17%;
+    padding: 0;
+}
+@keyframes toasty{
+    0% {left: 100%}
+    30% {left: 90%}
+    60% {left: 90%}
+    100% {left: 100%}
+}
+
+/* header */
+header{
+    width: 100%;
+    height: 10%;
+    background-color: #462d1b59;
+    position: fixed;
+    display: flex;
+    z-index: 9;
+}
+header > h1{
+    color: #ffffff;
+    margin: 0;
+    padding: 2% 2%;
+    display: inline-block;
+    font-size: 160%;
+    width: 22%;
+}
+.navtop{
+    width: 65%;
+    padding: 14px 2%;
+    display: flex;
+    -webkit-padding: 23.7% 2%;
+    
+}
+.navtop>ul{
+    padding: 0;
+    margin: 0;
+    font-size: 140%;
+    list-style-type: none;
+    display: flex;
+    transition-duration: 1s;
+}
+
+.navtop>ul>li{
+    margin-right: 5%;
+}
+.navtop>ul>li:hover .link-nav-top{
+    text-decoration: underline;
+    text-decoration-color: red;
+    transition-duration: 1s;
+}
+
+.btn-incri{
+    position: absolute;
+    left: 90%;
+    background-color: #007bff;
+    border: none;
+    font-size: 110%;
+    transition-duration: .5s
+}
+.btn-incri:hover{
+    background-color: #005fc5;
+    transition-duration: .5s;
+}
+.btn-incri:active{
+    background-color: #ff0000;
+    transition-duration: .2s;
+}
+@keyframes roteHeader{
+    to{transform: rotate(0deg)}
+    from {transform:rotate(360deg)}
+}
+
+/* section */
+section{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    animation: roteHeader 0s infinite 0s;
+    transition-duration: 1s;    
+}
+
+.fill{
+    width: inherit;
+    height: 100%;
+    display: block;
+}
+
+.group-center{
+    width: 60%;
+    margin: auto;
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.group-center > h2 {
+    font-family: pt serif;
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.group-center > p {
+    font-size: 1.5rem;
+    font-family: pt serif;
+}
+
+.group-top{
+    width: 100%;
+    display: block;
+    height: 40%;
+    padding: 1% 0px;
+    background-color: #583e29e0;
+}
+
+.group-top > h2{
+    font-family: pt serif;
+    text-align: center;
+    padding: 0;
+    height: 15%;
+    font-size: 188%;
+    margin: 0;
+    color: white;
+}
+
+.group-top > .proc-coffe{
+    height: 81%;
+}
+
+.group-top > .proc-coffe > ol{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    list-style-position: inside;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.group-top > .proc-coffe > ol>li{
+    height: 100%;
+    width: 26.333%;
+}
+
+.group-top > .proc-coffe > ol > li > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+} 
+
+.locationcoffee{
+    width: 100%;
+    height: 100%;
+}
+
+.group-full{
+    width: 100%;
+    height: 97%;
+    display: block;
+    padding: 1% 0;
+}
+
+.group-full > h2{
+    font-family: pt serif;
+    text-align: center;
+    padding: 0;
+    height: 10%;
+    font-size: 188%;
+    margin: 0;
+    color: white;
+}
+
+.group-full > .type-coffee{
+    width: 96%;
+    height: 88%;
+    margin: 0;
+    padding: 0 2%;
+    text-align: center;
+}
+
+.card-coffee{
+    width: 16%;
+    height: 38%;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.card-coffee > figure{
+    height: 70%;
+    width: 100%;
+    border-radius: 89% 25%;
+    margin: 0;
+    overflow: hidden;
+    transition-duration: .5s;
+    animation: giraBean 0s infinite ;
+}
+
+@keyframes giraBean {
+    0% {transform: rotate(30deg)}
+    50% {transform: rotate(0deg)}
+    100% {transform: rotate(30deg)}
+}
+
+.card-coffee > figure > img{
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s
+}
+
+.card-coffee:hover > figure > img{
+    transform: scale(2);
+    transition-duration: 1s
+}
+
+.card-coffee>h3{
+    margin: 0;
+    color: white;
+    font-family: pt serif;
+}
+.menuBar{
+    height: 100%;
+    width: 10%;
+    background: transparent;
+    border: none;
+    margin-left: 2%;
+    display: none;
+}
+
+@media (min-width: 320px)and (max-width: 575.98px) { 
+    .section-cards{
+        height: auto !important;
+    }
+    .card-coffee{
+        width: 35%;
+        margin-left: 4%;
+
+    }
+    .group-center > p {
+        font-size: 1.2rem;
+    }
+    .group-center{
+        top: -30%;
+    }
+    .group-top{
+        height: 35%;
+    }
+    .group-top > .proc-coffe {
+        height: 60%;
+    }
+    .group-top>h2{
+        height: 36%;
+    }
+    .navtop{
+        justify-content: flex-end;
+    }
+    .navtop>ul{
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        top: 100%;
+        background-color: #533b27;
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        height: 0%;
+        transition-duration: 1s;
+    }
+    header>h1{
+        width: 50%;
+        font-size: 120%;
+    }
+    .btn-incri{
+        left: 68%;
+        position: fixed;
+        top: 94%;
+        font-size: 125%;
+    }
+    .menuBar{
+        display: block;
+        margin-left: 4%;
+        width: 20%;
+    }
+    .group-center > h2 {
+        font-size: 2rem;
+        display: none;
+    }
+    section{
+        height: 50%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .section-cards{
+        height: auto !important;
+    }
+    .card-coffee{
+        width: 23%;
+        margin: 2%;
+        
+    }
+    .navtop{
+        justify-content: flex-end;
+    }
+    .navtop>ul{
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        top: 100%;
+        background-color: #533b27;
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        height: 0%;
+        transition-duration: 1s;
+    }
+    header>h1{
+        width: 80%;
+    }
+    .btn-incri{
+        left: 68%;
+        position: unset;
+    }
+    .menuBar{
+        display: block;
+        margin-left: 4%;
+    width: 15%;
+    }
+    .group-center > h2 {
+        font-size: 2rem;
+    }
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .card-coffee {
+        width: 15%;
+        margin: 2%;
+    }
+    .section-cards{
+        height: auto !important;
+    }
+    .navtop{
+        justify-content: flex-end;
+    }
+    .navtop>ul{
+        position: absolute;
+        width: 100%;
+        right: 0%;
+        top: 100%;
+        background-color: #533b27;
+        text-align: center;
+        overflow: hidden;
+        display: block;
+        height: 0%;
+        transition-duration: 1s;
+    }
+    header>h1{
+        width: 60%;
+    }
+    .btn-incri{
+        left: 68%;
+        position: unset;
+    }
+    .menuBar{
+        display: block;
+    }
+    .group-center > h2 {
+        font-size: 2.4rem;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .card-coffee {
+        width: 17%;
+        margin: 2%;
+    }
+    .section-cards{
+        height: auto !important;
+    }
+    header>h1{
+        width: 33%;
+    }
+    .group-center > h2 {
+        font-size: 3.2rem;
+    }
+ }
+
+@media (min-width: 1200px) { 
+    header>h1{
+        width: 25%;
+    }
+    .group-center > h2 {
+        font-size: 3.8rem;
+    }
+ }
+

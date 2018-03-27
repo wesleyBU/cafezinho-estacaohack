@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" value="http://localhost:3030/music" placeholder="file.mp3">
+    <canvas style="width: 60%; height:300px;"></canvas>
+
+    <script>
+        const player = new Audio();
+        const file = document.querySelector('input');
+
+        player.crossOrigin = 'anonymous';
+        player.src = file.value;
+        file.onblur = () => {
+            player.src = file.value;
+        }
+
+        player.addEventListener('ended', () => {
+            console.log('ACABOU PORRA');
+        });
+
+        //Instânciando a Web API Audio
+        const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+
+        //Criando um fonte de audio
+        let source = audioCtx.createMediaElementSource(player);
+        //Crinado o analizador
+        let analyser = audioCtx.createAnalyser();
+        //Direcionando fluxo Source para Analyser
+        source.connect(analyser);
+        //Direcionando fluxo Analyser para saída
+        analyser.connect(audioCtx.destination);
+
+        //configuração de fluxo Analyser
+        analyser.fftSize = 2048;
+        var bufferLength = analyser.frequencyBinCount;
+        var dataArray = new Uint8Array(bufferLength);
+
+
+
+
+        setInterval(() => {
+            analyser.getByteTimeDomainData(dataArray);
+            console.log(dataArray[0] / 128.0 * 100);
+        }, 100)
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cafezinho # Estação Hack</title>
+    <link rel="stylesheet" href="style/index.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script/loader.js"></script>
+    <script src="script/controller.js"></script>
+</head>
+<body>
+    
+    <div class="alertMsg">
+        <div class="contentAlertMsg">
+            <h6 id="titlealertmsg">Title</h6>
+            <p id="msgalertmsg">
+                Msg
+            </p>
+        </div>
+        <button type="button" onclick="closeAlertMsg()">x</button>
+    </div>
+    <img class="combo" src="image/ester/toasty.png" alt="TOASTY!">
+    <header>
+        <h1>
+            <a href="" onclick="linkBar(event,0)">Cafezinho # Estação Hack</a>
+        </h1>
+        <div class="navtop">
+            <ul class="navbar">
+                <li>
+                    <a href="#processo" onclick="linkBar(event,1)" class="link-nav-top">Processo</a>
+                </li>
+                <li>
+                    <a href="#tiposcafe" onclick="linkBar(event,2)" class="link-nav-top">Tipos</a>
+                </li>
+                <li>
+                    <a href="http://" onclick="linkBar(event,3)" class="link-nav-top">Localização</a>
+                </li>
+            </ul>
+            <button type="button" class="btn-incri">
+                <a target="_blank" href="https://mastertech.com.br/EstacaoHack">Inscrição</a>
+            </button>
+            <button type="button" class="menuBar" onclick="navBar()">
+                <svg xmlns="http://www.w3.org/2000/svg" style="fill: #797979;" viewBox="0 0 448 512">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+                    />
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section style="background-image: url('image/background/0.jpg')">
+        <div class="fill" style="background-color: rgba(0, 0, 0, 0.67);">
+            <span class="group-center">
+                <h2 class="chicoxavier" title="Não há nada aqui.">Cafézinho # Estação Hack</h2>
+                <p class="output">
+                    Lorem ipsum dolor sit amet, saepe docendi luptatum ad sed. 
+                    Sea et diam natum clique no titulo, para começar ne odio constituam neglegentur eum. 
+                    Case explicari imperdiet ex quo.
+                </p>
+            </span>
+
+        </div>
+    </section>
+    <section style="background-image: url('image/background/4.jpg')">
+        <div class="fill" style=" background-color: rgba(0, 0, 0, 0.67);">
+            <span class="group-top">
+                <h2 id="processo">Processo</h2>
+                <div class="proc-coffe">
+                    <ol>
+                        <li>
+                            <img src="image/typecoffee/0.jpg" alt="Verde">
+                        </li>
+                        <li>
+                            <img src="image/typecoffee/1.jpg" alt="Maduro">
+                        </li>
+                        <li>
+                            <img src="image/typecoffee/2.jpg" alt="Torrado">
+                        </li>
+                    </ol>
+                </div>
+            </span>
+        </div>
+    </section>
+    <section class="section-cards" style="background-image: url('image/background/3.jpg')">
+        <div class="fill" style=" background-color: rgba(0, 0, 0, 0.67);">
+            <span class="group-full">
+                <h2 id="tiposcafe">Tipos de café</h2>
+                <div class="type-coffee">
+                    <!-- AREA OF CARDS -->
+                </div>
+            </span>
+        </div>
+        <script src="script/type-coffee.js"></script>
+
+    </section>
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.168069917264!2d-46.65646108568372!3d-23.562406484682334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8e337bb7f%3A0x53d643daf01894f5!2zRXN0YcOnw6NvIEhhY2s!5e0!3m2!1spt-BR!2sbr!4v1521322593872"
+            class="locationcoffee" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+[
+    {
+        "img": "image/default/card-coffee.png",
+        "title": "Café raiz",
+        "link": "",
+        "id": "",
+        "event":{"name":"onclick","value":"alterBackgroundBean('image/o-o/mother.jpg',2)"}
+    },
+    {
+        "img": "image/loscoffee/0.jpg",
+        "title": "Café com Vitas",
+        "link": "",
+        "id": "",
+        "event":{"name":"onclick","value":"shake('/data/vitas.mp3')"}
+    },
+    {
+        "img": "image/loscoffee/1.jpg",
+        "title": "Café com leite",
+        "link": "",
+        "id": "",
+        "event":{"name":"onclick","value":"access('https://www.linkedin.com/in/wesley-waraujo/')"}
+    },
+    {
+        "img": "http://receitasdukan.blog.br/wp-content/uploads/2015/07/cafe-com-leite-dukan.jpg",
+        "title": "Café com leite semi-desnatado",
+        "link": "",
+        "id": "",
+        "event":{"name":"onclick","value":"shake('/data/vitas.mp3')"}
+    },
+    {
+        "img": "https://i.pinimg.com/564x/28/38/f3/2838f3ad83e05c34300f9a0d1b8cbce2.jpg",
+        "title": "Café com água saborizada",
+        "link": "",
+        "id": "",
+        "event":{"name":"onclick","value":"shakeSection('/data/gemidao.mp3')"}
+    },
+    {
+        "img": "http://www.assego.com.br/uploads/012112014020457.jpg",
+        "title": "Café com chá",
+        "link": "",
+        "id": "",
+        "event":{"name":"onmouseover","value":"shake('/data/quero-cafe.mp3')"}
+    },
+    {
+        "img": "http://3.bp.blogspot.com/-fY939LugPks/UbdggiZakhI/AAAAAAAAONA/t9_VQaIM8YY/s1600/acucar1.jpg",
+        "title": "Café com adoçante",
+        "link": "",
+        "id": "",
+        "event":{"name":"onmouseover","value":""}
+    },
+    {
+        "img": "image/loscoffee/2.jpg",
+        "title": "Café na caneca",
+        "link": "",
+        "id": "",
+        "event":{"name":"onmouseover","value":""}
+    },
+    {
+        "img": "https://conteudo.imguol.com.br/c/olimpiadas/e0/2016/08/09/gringos-reclamam-do-tamanho-do-cafe-servido-no-brasil-1470768193076_v2_300x300.png",
+        "title": "Café sem caneca",
+        "link": "",
+        "id": "",
+        "event":{"name":"onmouseover","value":""}
+    }
+]
